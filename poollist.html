@@ -1,0 +1,14 @@
+<div ng-controller='colossusController as colossus'>
+		
+
+	<div ng-repeat="display_group in colossus.poolList">
+		<h1>{{display_group.display_group_name}}</h1>
+		<div ng-repeat="group in display_group.groups">
+			<h2>{{group.display_group_name}}</h2>
+			<li ng-repeat="pool in group.pools">
+				<div ng-click="colossus.poolDetail(pool.id)">{{pool.id}}</a>
+			</li>
+		</div>
+	</div>
+
+</div>
