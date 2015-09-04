@@ -1,4 +1,4 @@
-# Solution to the Colossus Bet Front End Technical Test
+# Solution to the Colossus Bets Front End Technical Test
 
 ## Known Issues
 * Does not respond to selections being deselected
