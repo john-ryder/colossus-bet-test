@@ -47,6 +47,8 @@
 				}
 			}
 			
+			console.log(vm.bet);
+			
 			colossusService.makeBet(vm.bet)
 				.then(function(response){
 					console.log('Success!');
