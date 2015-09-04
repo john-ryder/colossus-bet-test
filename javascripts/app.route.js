@@ -9,9 +9,13 @@
 	
 	function config($routeProvider){
 		$routeProvider.when('/', {
-			controller: 'colossusController',
+			controller: 'poollistController',
 			controllerAs: 'colossus',
-			templateUrl: 'index.html'
+			templateUrl: './poollist.html'
+		}).when('/:poolId', {
+			controller: 'poolDetailController',
+			controllerAs: 'colossus',
+			templateUrl: './pooldetail.html'
 		}).otherwise('/');
 	}
-});
+})();

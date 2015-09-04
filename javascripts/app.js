@@ -2,5 +2,5 @@
 	'use strict';
 	
 	angular
-		.module('colossus', []);
+		.module('colossus', ['ngRoute']);
 })();

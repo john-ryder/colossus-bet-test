@@ -11,7 +11,8 @@
 		
 		var service = {
 			'getPools' : getPools,
-			'poolDetail' : poolDetail
+			'poolDetail' : poolDetail,
+			'makeBet': makeBet
 		};
 		
 		return service;	
@@ -28,6 +29,13 @@
 			 * Return detailed information about a given pool
 			 */
 			 return $http.get('https://colossusdevtest.herokuapp.com/api/pools/' + id + '.json');
+		}
+		
+		function makeBet(bet){
+			/**
+			 * Pushes completed bet to the server
+			 */
+			 return $http.post('https://colossusdevtest.herokuapp.com/api/tickets.json', bet);
 		}
 	}
 
